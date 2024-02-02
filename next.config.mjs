@@ -2,16 +2,23 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-    output: 'export',
-   
-    // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
-    // trailingSlash: true,
-   
-    // Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
-    // skipTrailingSlashRedirect: true,
-   
-    // Optional: Change the output directory `out` -> `dist`
-    // distDir: 'dist',
-  }
-   
-  module.exports = nextConfig
+    // ... другие конфигурации ...
+  
+    // Используйте новый способ экспорта вместо команды next export
+    // Добавьте этот блок конфигурации
+    exportPathMap: async function (
+      defaultPathMap,
+      { dev, dir, outDir, distDir, buildId }
+    ) {
+      return {
+        // Укажите пути, которые вы хотите экспортировать
+        '/': { page: '/' },
+        '/about': { page: '/about' },
+        // ... добавьте другие пути, если необходимо
+      };
+    },
+  
+    // ... другие конфигурации ...
+  };
+  
+  module.exports = nextConfig;
