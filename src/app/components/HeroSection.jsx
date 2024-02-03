@@ -8,13 +8,13 @@ export const HeroSection = () => {
 
   const handleDownload = () => {
     // Путь к файлу PDF
-    const pdfPath = './Habuzov_SV.pdf';
+    const pdfPath = './Habuzov_S_SV.pdf';
  
     // Создаем элемент <a> для скачивания
     const link = document.createElement('a');
     link.href = pdfPath;
     link.target = '_blank';
-    link.download = 'Резюме.pdf';
+    link.download = 'Khabuzov_S.CV';
 
     // Добавляем элемент в DOM, эмулируем клик по нему и удаляем его
     document.body.appendChild(link);
