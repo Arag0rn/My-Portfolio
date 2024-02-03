@@ -9,12 +9,13 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
+        <li>Next.js</li>
+        <li>React</li>
         <li>Node.js</li>
         <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
+        <li>Mongo Db</li>
         <li>JavaScript</li>
-        <li>React</li>
+        <li>Tailwind</li>
       </ul>
     ),
   },
@@ -23,8 +24,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li><a href="https://goit.global/ua/">Full stack Developer GoIT - start your career in IT</a></li>
+        <li><a href="https://beonmax.com/">Be On Max - Web-developer</a></li>
       </ul>
     ),
   },
