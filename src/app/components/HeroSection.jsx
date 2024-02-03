@@ -5,6 +5,23 @@ import { TypeAnimation } from 'react-type-animation';
 
 
 export const HeroSection = () => {
+
+  const handleDownload = () => {
+    // Путь к файлу PDF
+    const pdfPath = './Habuzov_SV.pdf';
+ 
+    // Создаем элемент <a> для скачивания
+    const link = document.createElement('a');
+    link.href = pdfPath;
+    link.target = '_blank';
+    link.download = 'Резюме.pdf';
+
+    // Добавляем элемент в DOM, эмулируем клик по нему и удаляем его
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section>
         <div className='grid grid-cols-1 lg:grid-cols-12'>
@@ -36,14 +53,14 @@ export const HeroSection = () => {
 
                 <div>
                   <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500  hover:bg-slate-200 text-white'>Hire Me</button>
-                  <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500  via-purple-500 to-pink-500  hover:bg-slate-800 text-white mt-3'>
+                  <button  onClick={handleDownload} className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500  via-purple-500 to-pink-500  hover:bg-slate-800 text-white mt-3'>
                     <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>Download CV</span></button>
                 </div>
          </div>
             <div className='col-span-5 place-self-center mt-4 lg:mt-0 overflow-hidden'>
             <div className='rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative'>
                 <Image
-                  src='/hero-img.png'
+                  src='./hero-img.png'
                   alt='hero-img'
                   width={300}
                   height={300}
