@@ -26,7 +26,7 @@ export const HeroSection = () => {
     <section>
         <div className='grid grid-cols-1 lg:grid-cols-12'>
             <div className='col-span-7 place-self-center text-center sm:text-left'>
-                <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
+                <h1 className="text-white mb-4 text-3xl sm:text-5xl lg:text-6xl font-extrabold">
                  <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'> Hello, I a`m{" "} </span>
                  <br></br>
                  <TypeAnimation
@@ -44,7 +44,7 @@ export const HeroSection = () => {
   
       ]}
       wrapper="span"
-      speed={50}
+      speed={30}
       repeat={Infinity}
     />
                   </h1>
