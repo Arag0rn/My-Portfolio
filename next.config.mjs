@@ -6,4 +6,4 @@ module.exports = withNextIntl({
 
   basePath: '',
   assetPrefix: '',
-});
+}); 
