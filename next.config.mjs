@@ -5,5 +5,5 @@ const withNextIntl = createNextIntlPlugin();
 export default withNextIntl({
   basePath: '',
   assetPrefix: '',
-  outDir: './out',
+  distDir: './out',
 }); 
