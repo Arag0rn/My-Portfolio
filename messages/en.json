@@ -5,6 +5,7 @@
         "third": "Contact"
     },
     "Hero": {
-      "title": "Hello, I a`m"
+      "title": "Hello, I a`m",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repellat, molestias voluptates blanditiis enim id quibusdam fugit commodi asperiores vitae. Sunt ea deserunt, placeat quia atque porro mollitia. Minus, sint."
     }
   }

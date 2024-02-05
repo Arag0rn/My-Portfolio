@@ -50,7 +50,7 @@ export const HeroSection = () => {
       repeat={Infinity}
     />
                   </h1>
-                <p className='text-[#ABB7BE] text-base sm:text-lg mb-6 lg:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repellat, molestias voluptates blanditiis enim id quibusdam fugit commodi asperiores vitae. Sunt ea deserunt, placeat quia atque porro mollitia. Minus, sint.
+                <p className='text-[#ABB7BE] text-base sm:text-lg mb-6 lg:text-xl'>{t("text")}
                 </p>
 
                 <div>
