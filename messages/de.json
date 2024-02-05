@@ -1,0 +1,10 @@
+{
+    "Navbar": {
+        "first": "Über",
+        "second": "Projekte",
+        "third": "Kontakt"
+    },
+    "Hero": {
+      "title": "Hallo, ich bin"
+    }
+  }

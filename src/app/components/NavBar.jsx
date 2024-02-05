@@ -1,27 +1,48 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from 'next/link';
 import NavLink from './NavLink';
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { usePathname } from 'next/navigation';
+import { useLocale } from "next-intl";
+import getCurrentPathname from "../getCurrentPathname";
+import { useTranslations } from 'next-intl';
+
+
+
+
+
+const Navbar = () => {
+    const [navbarOpen, setNavbarOpen] = useState(false);
+    const locale = useLocale();
+    const pathname = usePathname();
+    const [currentPathname, setCurrentPathname] = useState('');
+    const t = useTranslations("Navbar");
 
 const navLinks = [
     {
-        title: "About",
+        title: t("first"),
         path:"#about",
     },
     {
-        title: "Projects",
+        title: t("second"),
         path:"#projects",
     },
     {
-        title: "Contact",
+        title: t("third"),
         path:"#contact",
     }
 
 ]
-const Navbar = () => {
-    const [navbarOpen, setNavbarOpen] = useState(false);
+
+    console.log(pathname);
+
+  useEffect(() => {
+  const path = getCurrentPathname(pathname);
+  setCurrentPathname(path)
+}, [pathname])
   
     return (
       <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
@@ -32,6 +53,8 @@ const Navbar = () => {
           >
             LOGO
           </Link>
+
+          <LanguageSwitcher locale={locale} pathname={currentPathname} />
           <div className="mobile-menu block md:hidden">
             {!navbarOpen ? (
               <button
