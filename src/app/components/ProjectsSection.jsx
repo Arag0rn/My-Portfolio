@@ -3,68 +3,74 @@ import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
+import { useTranslations } from "next-intl";
 
-const projectsData = [
-  {
-    id: 1,
-    title: "Bookshelf",
-    description: "Enthusiastically driven by a passion for reading and organization, I led an exciting educational project focused on simplifying the process of finding and adding books to a wishlist. Working collaboratively with a talented team of 7 individuals, we crafted an innovative solution that streamlines the discovery and purchase of books.",
-    image: "./projects/Bookshelf.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/Arag0rn/project-CodeBusters",
-    previewUrl: "https://arag0rn.github.io/project-CodeBusters/",
-  },
-  {
-    id: 2,
-    title: "Water Tracker",
-    description: "My field project. You can try it yourself. The application counts the water you drink, sends notifications to telegram and does not require complicated registration. You can use Google account. I gladly accept feedback",
-    image: "./projects/water-tracker.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/Okimmi/stackNinjas-frontend",
-    previewUrl: "https://okimmi.github.io/stackNinjas-frontend/",
-  },
-  {
-    id: 3,
-    title: "Argo-Advisory",
-    description: "Created for Argo-Advisory and George Chanturia. Design by Fotini Chora",
-    image: "./projects/argo-advisory.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/Arag0rn/ARGO-Advisori",
-    previewUrl: "https://argo-advisory.com/",
-  },
-  {
-    id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-];
+
 
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  const t = useTranslations("Projects");
+
+
+  const projectsData = [
+    {
+      id: 1,
+      title: "Bookshelf",
+      description: t("description1"),
+      image: "./projects/Bookshelf.png",
+      tag: ["All", "HTML/CSS/JS"],
+      gitUrl: "https://github.com/Arag0rn/project-CodeBusters",
+      previewUrl: "https://arag0rn.github.io/project-CodeBusters/",
+    },
+    {
+      id: 2,
+      title: "Water Tracker",
+      description: t("description2"),
+      image: "./projects/water-tracker.png",
+      tag: ["All", "React"],
+      gitUrl: "https://github.com/Okimmi/stackNinjas-frontend",
+      previewUrl: "https://okimmi.github.io/stackNinjas-frontend/",
+    },
+      {
+      id: 3,
+      title: "ENG For Uarmy",
+      image: "./projects/eng-for-ua.png",
+      description: t("description3"),
+      tag: ["All", "Next"],
+      gitUrl: "https://github.com/baza-trainee/eng-for-uarmy",
+      previewUrl: "https://engforuarmy.org/",
+    },
+    {
+      id: 4,
+      title: "Argo-Advisory",
+      description: t("description4"),
+      image: "./projects/argo-advisory.png",
+      tag: ["All", "HTML/CSS/JS"],
+      gitUrl: "https://github.com/Arag0rn/ARGO-Advisori",
+      previewUrl: "https://argo-advisory.com/",
+    },
+    {
+      id: 5,
+      title: "Cinema Monster",
+      description: t("description5"),
+      image: "/projects/Cinema.png",
+      tag: ["All", "React"],
+      gitUrl: "https://github.com/Arag0rn/goit-react-hw-05-movies",
+      previewUrl: "https://arag0rn.github.io/goit-react-hw-05-movies/",
+    },
+    {
+      id: 6,
+      title: "Watch Sport",
+      description: t("description6"),
+      image: "/projects/watch.png",
+      tag: ["All", "HTML/CSS/JS"],
+      gitUrl: "https://github.com/Arag0rn/The-Watch-Spot",
+      previewUrl: "https://arag0rn.github.io/The-Watch-Spot/",
+    },
+  ];
+  
 
   const handleTagChange = (newTag) => {
     setTag(newTag);
@@ -92,12 +98,17 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
+          name="React"
           isSelected={tag === "Web"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
+          name="HTML/CSS/JS"
+          isSelected={tag === "Mobile"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Next"
           isSelected={tag === "Mobile"}
         />
       </div>

@@ -5,10 +5,11 @@ import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 import { useForm, ValidationError } from '@formspree/react';
+import { useTranslations } from "next-intl";
 
 const EmailSection = () => {
     const [state, handleSubmit] = useForm("mgegaklk");
-
+    const t = useTranslations("Email");
 
 
   return (
@@ -19,13 +20,11 @@ const EmailSection = () => {
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10">
         <h5 className="text-xl font-bold text-white my-2">
-          Let&apos;s Connect
+        {t("title")}
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           {" "}
-          I&apos;m currently looking for new opportunities, my inbox is always
-          open. Whether you have a question or just want to say hi, I&apos;ll
-          try my best to get back to you!
+          {t("text")}
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="github.com">
@@ -39,7 +38,7 @@ const EmailSection = () => {
       <div>
         {state.succeeded ? (
           <p className="text-green-500 text-sm mt-2">
-            Email sent successfully!
+           {t("sent")}
           </p>
         ) : (
           <form className="flex flex-col" onSubmit={handleSubmit}>
@@ -48,7 +47,7 @@ const EmailSection = () => {
                 htmlFor="email"
                 className="text-white block mb-2 text-sm font-medium"
               >
-                Your email
+                {t("email")}
               </label>
               <input
                 name="email"
@@ -64,7 +63,7 @@ const EmailSection = () => {
                 htmlFor="subject"
                 className="text-white block text-sm mb-2 font-medium"
               >
-                Subject
+                 {t("subject")}
               </label>
               <input
                 name="subject"
@@ -80,7 +79,7 @@ const EmailSection = () => {
                 htmlFor="message"
                 className="text-white block text-sm mb-2 font-medium"
               >
-                Message
+                {t("message")}
               </label>
               <textarea
                 name="message"
@@ -93,7 +92,7 @@ const EmailSection = () => {
               type="submit"
               className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
             >
-              Send Message
+              {t("send-mes")}
             </button>
           </form>
         )}

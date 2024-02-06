@@ -6,9 +6,31 @@
     },
     "Hero": {
       "title": "Hallo, ich bin",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repellat, molestias voluptates blanditiis enim id quibusdam fugit commodi asperiores vitae. Sunt ea deserunt, placeat quia atque porro mollitia. Minus, sint."
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repellat, molestias voluptates blanditiis enim id quibusdam fugit commodi asperiores vitae. Sunt ea deserunt, placeat quia atque porro mollitia. Minus, sint.",
+      "hire me":"Stellt mich ein",
+      "download": "Lebenslauf herunterladen"
     },
     "About": {
-      "about_me": "Ich bin Fullstack-Entwickler mit über einem Jahr Erfahrung in der Entwicklung, davon sechs Monate in verschiedenen Branchen. Gute Englisch- und Deutschkenntnisse, die sich durch Anpassungsfähigkeit und schnelles Lernen auszeichnen. Leidenschaftlich für Innovation, engagiert für die Bereitstellung hochwertiger Weblösungen. Brilliert in internationalen, kollaborativen Umgebungen und trägt zu Disziplin, Organisation und effektiver Kommunikation bei. Ich möchte meinen einzigartigen Hintergrund in der Frontend-Entwicklung nutzen, um Anpassungsfähigkeit, Lernagilität und akribische Liebe zum Detail für benutzerzentrierte Lösungen anzubieten."
+      "about_me": "Ich bin Fullstack-Entwickler mit über einem Jahr Erfahrung in der Entwicklung, davon sechs Monate in verschiedenen Branchen. Gute Englisch- und Deutschkenntnisse, die sich durch Anpassungsfähigkeit und schnelles Lernen auszeichnen. Leidenschaftlich für Innovation, engagiert für die Bereitstellung hochwertiger Weblösungen. Brilliert in internationalen, kollaborativen Umgebungen und trägt zu Disziplin, Organisation und effektiver Kommunikation bei. Ich möchte meinen einzigartigen Hintergrund in der Frontend-Entwicklung nutzen, um Anpassungsfähigkeit, Lernagilität und akribische Liebe zum Detail für benutzerzentrierte Lösungen anzubieten.",
+      "skills": "Fähigkeiten",
+      "education": "Ausbildung",
+      "certifications": "Zertifizierungen"
+    },
+    "Projects":{
+      "description1": "Ein praktisches Projekt für einen Buchmarktplatz. Hier wird die Authentifizierung mit Firebase verwendet, Sie können sie auch zu Ihren Favoriten hinzufügen. API und Dunkelmodus.",
+      "description2": "Mein Feldprojekt. Sie können es selbst ausprobieren. Die Anwendung zählt das von Ihnen getrunkene Wasser, sendet Benachrichtigungen an Telegram und erfordert keine komplizierte Registrierung. Sie können ein Google-Konto verwenden. Rückmeldungen nehme ich gerne entgegen.",
+      "description3": "Ein großes Lob an Baza Trainee Ukraine und das wunderbare Team von Freiwilligen, das wir zusammengestellt haben, um die Website für ENG für UARMY zu erstellen – Olena Chekryzhovas gemeinnützige Organisation, die ukrainischen Soldaten hilft, Militärenglisch zu lernen!",
+      "description4": "Erstellt für Argo-Advisory und George Chanturia. Design von Fotini Chora.",
+      "description5": "Ein praktisches Projekt mit React, API und Liebe zum Kino.",
+      "description6": "Ein praktisches Projekt für einen Uhrenmarktplatz."
+    },
+    "Email":{
+      "title": "Lass uns verbinden",
+      "text": "Ich bin derzeit auf der Suche nach neuen Möglichkeiten, mein Posteingang ist immer geöffnet. Egal, ob Sie eine Frage haben oder einfach nur Hallo sagen möchten, ich werde mein Bestes geben, um mich bei Ihnen zu melden!",
+      "sent": "Email wurde erfolgreich Versendet!",
+      "email":"Ihre email",
+      "subject": "Thema",
+      "message": "Nachricht",
+      "send-mes": "Nachricht senden"
     }
   }
