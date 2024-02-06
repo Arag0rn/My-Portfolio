@@ -7,5 +7,8 @@
     "Hero": {
       "title": "Hello, I a`m",
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repellat, molestias voluptates blanditiis enim id quibusdam fugit commodi asperiores vitae. Sunt ea deserunt, placeat quia atque porro mollitia. Minus, sint."
+    },
+    "About": {
+      "about_me": "I am Fullstack Developer with over a year experience in developing, including six months in diverse sectors. Good knowledge in English and German, showcasing adaptability and quick learning. Passionate about innovation, committed to delivering high-quality web solutions. Excels in international, collaborative environments, contributing discipline, organization, and effective communication. Aspiring to leverage my unique background into frontend development, offering adaptability, learning agility, and meticulous attention to detail for user-centric solutions."
     }
   }

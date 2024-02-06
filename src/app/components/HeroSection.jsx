@@ -11,12 +11,11 @@ export const HeroSection = () => {
   const handleDownload = () => {
 
     const pdfPath = './Habuzov_S_SV.pdf';
- 
 
     const link = document.createElement('a');
     link.href = pdfPath;
     link.target = '_blank';
-    link.download = 'Khabuzov_S.CV';
+    link.download = 'Khabuzov_S_SV.pdf';
 
 
     document.body.appendChild(link);
