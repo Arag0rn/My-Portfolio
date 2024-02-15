@@ -69,6 +69,24 @@ const ProjectsSection = () => {
       gitUrl: "https://github.com/Arag0rn/The-Watch-Spot",
       previewUrl: "https://arag0rn.github.io/The-Watch-Spot/",
     },
+    {
+      id: 7,
+      title: "Portfolio",
+      description: t("description7"),
+      image: "/projects/Port.png",
+      tag: ["All", "Next"],
+      gitUrl: "https://github.com/Arag0rn/My-Portfolio",
+      previewUrl: "https://khabuzovs-portfolio.vercel.app/",
+    },
+    {
+      id: 8,
+      title: "Car Rental",
+      description: t("description8"),
+      image: "/projects/CarRental.png",
+      tag: ["All", "React"],
+      gitUrl: "https://github.com/Arag0rn/Car-Rental",
+      previewUrl: "https://arag0rn.github.io/Car-Rental/home",
+    },
   ];
   
 

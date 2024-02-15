@@ -6,7 +6,7 @@
     },
     "Hero": {
       "title": "Hello, I a`m",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repellat, molestias voluptates blanditiis enim id quibusdam fugit commodi asperiores vitae. Sunt ea deserunt, placeat quia atque porro mollitia. Minus, sint.",
+      "text": "My passion for innovation and commitment to developing high-quality web solutions are reflected in my previous work. As a dedicated developer, I pay meticulous attention to detail and always strive for user-oriented solutions.",
       "hire me":"Hire Me",
       "download": "Download CV"
     },
@@ -22,7 +22,9 @@
       "description3": "A huge shoutout to Baza Trainee Ukraine and the wonderful team of volunteers we've assembled to build the website for ENG for UARMY - Olena Chekryzhova's non-profit that helps Ukrainian soldiers learn Military English!",
       "description4": "Created for Argo-Advisory and George Chanturia. Design by Fotini Chora",
       "description5": "A practical project using React, API and love for cinema.",
-      "description6": "A practical project for a watch marketplace."
+      "description6": "A practical project for a watch marketplace.",
+      "description7": "This is a portfolio website created for the convenient showcase of my works. It features two languages, the ability to download my resume, and is continuously updated with new projects.",
+      "description8": "A website for practicing React skills, utilizing the free service mockapi.io as the database (the site is under construction and continuous improvement)."
     },
     "Email":{
       "title": "Let`s Connect",

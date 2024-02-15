@@ -6,7 +6,7 @@
     },
     "Hero": {
       "title": "Hallo, ich bin",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repellat, molestias voluptates blanditiis enim id quibusdam fugit commodi asperiores vitae. Sunt ea deserunt, placeat quia atque porro mollitia. Minus, sint.",
+      "text": "Meine Leidenschaft für Innovation und mein Engagement für die Entwicklung hochwertiger Web-Lösungen spiegeln sich in meiner bisherigen Arbeit wider. Als engagierter Entwickler achte ich akribisch auf Details und strebe stets nach nutzerorientierten Lösungen.",
       "hire me":"Stellt mich ein",
       "download": "Lebenslauf herunterladen"
     },
@@ -22,7 +22,9 @@
       "description3": "Ein großes Lob an Baza Trainee Ukraine und das wunderbare Team von Freiwilligen, das wir zusammengestellt haben, um die Website für ENG für UARMY zu erstellen – Olena Chekryzhovas gemeinnützige Organisation, die ukrainischen Soldaten hilft, Militärenglisch zu lernen!",
       "description4": "Erstellt für Argo-Advisory und George Chanturia. Design von Fotini Chora.",
       "description5": "Ein praktisches Projekt mit React, API und Liebe zum Kino.",
-      "description6": "Ein praktisches Projekt für einen Uhrenmarktplatz."
+      "description6": "Ein praktisches Projekt für einen Uhrenmarktplatz.",
+      "description7": "Dies ist eine Portfolio-Website, die für die bequeme Präsentation meiner Arbeiten erstellt wurde. Sie bietet zwei Sprachen, die Möglichkeit, meinen Lebenslauf herunterzuladen, und wird kontinuierlich um neue Projekte erweitert.",
+      "description8": "Eine Website zur Vertiefung der Kenntnisse in React, die den kostenlosen Service mockapi.io als Datenbank verwendet (die Website befindet sich in Arbeit und wird kontinuierlich verbessert)."
     },
     "Email":{
       "title": "Lass uns verbinden",
