@@ -11,7 +11,7 @@ export const HeroSection = () => {
 
   const handleDownload = () => {
     if (locale === "en") {
-      const pdfPath = './Habuzov_S_SV.pdf';
+      const pdfPath = './Khabuzov_S_SV.pdf';
   
       const link = document.createElement('a');
       link.href = pdfPath;
@@ -24,7 +24,7 @@ export const HeroSection = () => {
     }
   
     if (locale === "de") {
-      const pdfPath = './Khabuzov S SV(de).pdf';
+      const pdfPath = './Habuzov S SV(de).pdf';
   
       const link = document.createElement('a');
       link.href = pdfPath;
