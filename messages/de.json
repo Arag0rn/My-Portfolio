@@ -24,7 +24,9 @@
       "description5": "Ein praktisches Projekt mit React, API und Liebe zum Kino.",
       "description6": "Ein praktisches Projekt für einen Uhrenmarktplatz.",
       "description7": "Dies ist eine Portfolio-Website, die für die bequeme Präsentation meiner Arbeiten erstellt wurde. Sie bietet zwei Sprachen, die Möglichkeit, meinen Lebenslauf herunterzuladen, und wird kontinuierlich um neue Projekte erweitert.",
-      "description8": "Eine Website zur Vertiefung der Kenntnisse in React, die den kostenlosen Service mockapi.io als Datenbank verwendet (die Website befindet sich in Arbeit und wird kontinuierlich verbessert)."
+      "description8": "Eine Website zur Vertiefung der Kenntnisse in React, die den kostenlosen Service mockapi.io als Datenbank verwendet (die Website befindet sich in Arbeit und wird kontinuierlich verbessert).",
+      "description9": "FriendRate (FR) ist eine soziale Plattform zum Sammeln und Austauschen von Informationen zwischen Benutzern, spezialisiert auf Stimmenerfassung mit der Möglichkeit der Bewertung und stadtweit.",
+      "description10": "Eine Seite zum Üben von Full-Stack-Fähigkeiten. Der Backend-Teil wurde implementiert, die Daten werden in der Datenbank (Mongo) gespeichert und eine Bibliothek zur Bestimmung von Standorten und lokalen Feiertagen wurde hinzugefügt. Darüber hinaus besteht die Möglichkeit, Fälle nach Wichtigkeit zu sortieren."
     },
     "Email":{
       "title": "Lass uns verbinden",

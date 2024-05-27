@@ -87,6 +87,24 @@ const ProjectsSection = () => {
       gitUrl: "https://github.com/Arag0rn/Car-Rental",
       previewUrl: "https://arag0rn.github.io/Car-Rental/home",
     },
+    {
+      id: 9,
+      title: "Friend Rate",
+      description: t("description9"),
+      image: "/projects/FriendRate.png",
+      tag: ["All", "FullStack"],
+      gitUrl: "https://github.com/FirstGrayCoder/FriendRate_Front",
+      previewUrl: "https://friend-rate-front.vercel.app/",
+    },
+    {
+      id: 10,
+      title: "TODOcalendar",
+      description: t("description10"),
+      image: "/projects/Calendar.jpeg",
+      tag: ["All", "FullStack"],
+      gitUrl: "https://github.com/Arag0rn/TODOcalendar",
+      previewUrl: "https://arag0rn.github.io/TODOcalendar",
+    },
   ];
   
 
@@ -122,12 +140,17 @@ const ProjectsSection = () => {
         <ProjectTag
           onClick={handleTagChange}
           name="HTML/CSS/JS"
-          isSelected={tag === "Mobile"}
+          isSelected={tag === "HTML/CSS/JS"}
         />
         <ProjectTag
           onClick={handleTagChange}
           name="Next"
-          isSelected={tag === "Mobile"}
+          isSelected={tag === "Next"}
+        />
+            <ProjectTag
+          onClick={handleTagChange}
+          name="FullStack"
+          isSelected={tag === "FullStack"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
