@@ -2,7 +2,8 @@
     "Navbar": {
         "first": "About",
         "second": "Projects",
-        "third": "Contact"
+        "third": "Contact",
+        "fourth": "Volunteering"
     },
     "Hero": {
       "title": "Hello, I a`m",
@@ -36,5 +37,9 @@
       "subject": "Subject",
       "message": "Message",
       "send-mes": "Send Message"
+    },
+    "Volunteering":{
+      "title": "Volunteering",
+      "text": "During my time as a volunteer at World Central Kitchen from April to June 2022, I assisted in a humanitarian restaurant for refugees in Dnipro. My role involved preparing meals, supporting the kitchen staff, and ensuring that those in need received nutritious food during a challenging time. This experience deepened my understanding of humanitarian efforts and the importance of community support."
     }
   }

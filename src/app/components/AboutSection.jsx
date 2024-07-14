@@ -36,6 +36,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>III YEPS Hackaton(1 place)</li>
+        <li>Future Simple Hack(1 place)</li>
         <li>D.T.Z. Deutsch B1</li>
       </ul>
     ),

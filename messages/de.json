@@ -2,7 +2,8 @@
     "Navbar": {
         "first": "Über",
         "second": "Projekte",
-        "third": "Kontakt"
+        "third": "Kontakt",
+        "fourth": "Freiwilligenarbeit"
     },
     "Hero": {
       "title": "Hallo, ich bin",
@@ -36,5 +37,9 @@
       "subject": "Thema",
       "message": "Nachricht",
       "send-mes": "Nachricht senden"
+    },
+    "Volunteering":{
+      "title": "Freiwilligenarbeit",
+      "text": "Während meiner Zeit als Freiwilliger bei World Central Kitchen von April bis Juni 2022 habe ich in einem humanitären Restaurant für Flüchtlinge in Dnipro geholfen. Meine Aufgabe bestand darin, Mahlzeiten zuzubereiten, das Küchenteam zu unterstützen und sicherzustellen, dass bedürftige Menschen in dieser schwierigen Zeit nahrhafte Lebensmittel erhalten. Diese Erfahrung hat mein Verständnis für humanitäre Maßnahmen und die Bedeutung von Gemeinschaftsunterstützung vertieft."
     }
   }

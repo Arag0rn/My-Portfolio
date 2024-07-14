@@ -33,7 +33,11 @@ const navLinks = [
     {
         title: t("third"),
         path:"#contact",
-    }
+    },
+    {
+      title: t("fourth"),
+      path:"#volunteering",
+  }
 
 ]
 
