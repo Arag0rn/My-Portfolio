@@ -4,8 +4,9 @@ import Image from "next/image";
 import TabButton from "./TabButton";
 import { useTranslations } from 'next-intl';
 import CertModal from "./CertModal";
-const goit = './certification/GOIT.jpeg';
-const zer = './certification/zer.jpeg';
+import goit from "../../../public/certification/GOIT.jpeg";
+import zer from "../../../public/certification/zer.jpeg";
+
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
   const [open, setOpen] = useState(false);
