@@ -5,7 +5,7 @@ import TabButton from "./TabButton";
 import { useTranslations } from 'next-intl';
 import CertModal from "./CertModal";
 import goit from "../../../public/GOIT.jpeg";
-import zer from "../../../public/zer.jpeg";
+import zer from "../../../public/Zer.jpeg";
 
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
