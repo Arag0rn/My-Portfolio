@@ -6,7 +6,6 @@ import Image from 'next/image';
 
 
 const CertModal = ({ open, onClose, imageUrl }) => {
-    console.log(imageUrl);
     const [zoom, setZoom] = useState(false)
 
     const HandleZoom = () => {

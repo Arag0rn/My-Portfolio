@@ -41,8 +41,6 @@ const navLinks = [
 
 ]
 
-    console.log(pathname);
-
   useEffect(() => {
   const path = getCurrentPathname(pathname);
   setCurrentPathname(path)
