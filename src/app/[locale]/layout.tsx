@@ -1,19 +1,17 @@
-import { NextIntlClientProvider, useMessages } from 'next-intl';
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 
-export function generateStaticParams() {
-  return [{locale: 'en'}, {locale: 'de'}];
-}
-
-const  LocaleLayout = async ({ children, params: { locale } }) => {
- const messages = useMessages();
+export default async function LocaleLayout({ children, params }) {
+  const { locale } = params;
+  const messages = await getMessages();
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
-      <html lang={locale}>
-        <body>{children}</body>
-      </html>
-    </NextIntlClientProvider>
+    <html lang={locale}>
+      <body>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          {children}
+        </NextIntlClientProvider>
+      </body>
+    </html>
   );
 }
-
-export default LocaleLayout

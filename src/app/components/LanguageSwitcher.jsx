@@ -1,23 +1,37 @@
+"use client";
 
-import Link from "next/link";
+import { useRouter, usePathname } from "next/navigation";
+import { useLocale } from "next-intl";
 
-const LanguageSwitcher = ({ locale, pathname }) => {
+export default function LanguageSwitcher() {
+  const router = useRouter();
+  const pathname = usePathname(); // /en
+  const locale = useLocale();
 
+  const switchLocale = (nextLocale) => {
+    const hash = window.location.hash; // #about
+
+    const segments = pathname.split("/");
+    segments[1] = nextLocale;
+
+    router.push(segments.join("/") + hash);
+  };
 
   return (
-    <div className="flex space-x-4 text-white">
-      <Link href={locale === 'de' ? `/en/${pathname}` : `/${pathname}`}>
-        <p style={{ fontWeight: locale === 'en' ? 'bold' : 'normal' }} className="text-white">
-          EN
-        </p>
-      </Link>
-      <Link href={locale === 'en' ? `/de/${pathname}` : `/${pathname}`}>
-        <p style={{ fontWeight: locale === 'de' ? 'bold' : 'normal' }} className="text-white">
-          DE
-        </p>
-      </Link>
+    <div className="flex gap-2">
+      <button
+        onClick={() => switchLocale("en")}
+        disabled={locale === "en"}
+      >
+        EN
+      </button>
+
+      <button
+        onClick={() => switchLocale("de")}
+        disabled={locale === "de"}
+      >
+        DE
+      </button>
     </div>
   );
-};
-
-export default LanguageSwitcher;
+}
