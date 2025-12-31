@@ -1,12 +1,11 @@
-import { NextIntlClientProvider } from "next-intl";
+import { NextIntlClientProvider, useMessages } from 'next-intl';
+
+export function generateStaticParams() {
+  return [{locale: 'en'}, {locale: 'de'}];
+}
 
 const  LocaleLayout = async ({ children, params: { locale } }) => {
-  let messages;
-  try {
-    messages = (await import(`../../../messages/${locale}.json`)).default;
-  } catch (error) {
-    return console.log(error);
-  }
+ const messages = useMessages();
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
