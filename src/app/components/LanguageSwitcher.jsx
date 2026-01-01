@@ -17,11 +17,12 @@ export default function LanguageSwitcher() {
     router.push(segments.join("/") + hash);
   };
 
-  return (
-    <div className="flex gap-2">
+return (
+    <div className="flex gap-4 text-white">
       <button
         onClick={() => switchLocale("en")}
         disabled={locale === "en"}
+        className={`${locale === "en" ? "font-bold underline" : "font-normal opacity-70 hover:opacity-100"}`}
       >
         EN
       </button>
@@ -29,6 +30,7 @@ export default function LanguageSwitcher() {
       <button
         onClick={() => switchLocale("de")}
         disabled={locale === "de"}
+        className={`${locale === "de" ? "font-bold underline" : "font-normal opacity-70 hover:opacity-100"}`}
       >
         DE
       </button>
