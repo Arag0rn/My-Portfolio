@@ -93,8 +93,8 @@ const ProjectsSection = () => {
       description: t("description9"),
       image: "/projects/FriendRate.webp",
       tag: ["All", "FullStack"],
-      gitUrl: "https://github.com/FirstGrayCoder/FriendRate_Front",
-      previewUrl: "https://friend-rate-front.vercel.app/",
+      gitUrl: "https://github.com/Arag0rn/Fiend-Rate",
+      previewUrl: "https://fiend-rate.vercel.app/",
     },
     {
       id: 10,
