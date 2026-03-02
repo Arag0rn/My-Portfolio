@@ -118,7 +118,7 @@ const ProjectsSection = () => {
       id: 12,
       title: "Vue Sneakers Shop",
       description: t("description12"),
-      image: "/projects/VueShop.webp",
+      image: "/projects/vueShop.webp",
       tag: ["All", "FullStack", "Vue"],
       gitUrl: "https://github.com/Arag0rn/shopFront",
       previewUrl: "https://shop-front-omega.vercel.app/",
