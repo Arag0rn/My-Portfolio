@@ -110,9 +110,18 @@ const ProjectsSection = () => {
       title: "Crystall nails studio",
       description: t("description11"),
       image: "/projects/CrystalNails.webp",
-      tag: ["All", "FullStack"],
+      tag: ["All", "Next", "FullStack"],
       gitUrl: "https://github.com/Arag0rn/crystall-nails-studio",
       previewUrl: "https://crystal-studio-nails.vercel.app",
+    },
+          {
+      id: 12,
+      title: "Vue Sneakers Shop",
+      description: t("description12"),
+      image: "/projects/VueShop.webp",
+      tag: ["All", "FullStack", "Vue"],
+      gitUrl: "https://github.com/Arag0rn/shopFront",
+      previewUrl: "https://shop-front-omega.vercel.app/",
     },
   ];
   
@@ -145,6 +154,11 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="React"
           isSelected={tag === "React"}
+        />
+           <ProjectTag
+          onClick={handleTagChange}
+          name="Vue"
+          isSelected={tag === "Vue"}
         />
         <ProjectTag
           onClick={handleTagChange}

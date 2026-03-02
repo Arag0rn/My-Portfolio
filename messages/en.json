@@ -28,7 +28,8 @@
       "description8": "A website for practicing React skills, utilizing the free service mockapi.io as the database (the site is under construction and continuous improvement).",
       "description9": "FriendRate (FR) is a social platform for collecting and exchanging information between users, specializing in voice gathering with the possibility of rating and citywide.",
       "description10": "A site for practicing full stack skills. The backend part has been implemented, the data is saved in the database (Mongo), and a library for determining location and local holidays has been added. In addition, it is possible to sort cases by importance.",
-      "description11": "In my free time, I developed the project **crystall-nails-studio** for a friend. The goal was to build a website with an admin panel, allowing the owner to manage and update the content independently. I used Next.js TypeScript, and TailwindCSS, implemented API routes and middleware, ensured code quality with ESLint, and deployed the application on Vercel."
+      "description11": "In my free time, I developed the project **crystall-nails-studio** for a friend. The goal was to build a website with an admin panel, allowing the owner to manage and update the content independently. I used Next.js TypeScript, and TailwindCSS, implemented API routes and middleware, ensured code quality with ESLint, and deployed the application on Vercel.",
+      "description12": "A full-stack practice project for a marketplace. I focused on connecting a Vue.js frontend with a Node.js backend, using Axios for API requests and MongoDB for data storage. The project is deployed and fully functional."
     },
     "Email":{
       "title": "Let`s Connect",

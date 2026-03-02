@@ -30,13 +30,16 @@ const AboutSection = () => {
       content: (
         <ul className="list-disc pl-2">
           <li>Next.js</li>
+          <li>Vue.js</li>
           <li>React</li>
           <li>Node.js</li>
+          <li>PHP</li>
           <li>Express</li>
           <li>Mongo Db</li>
           <li>JavaScript</li>
           <li>Tailwind</li>
           <li>Socket.io</li>
+        
         </ul>
       ),
     },
