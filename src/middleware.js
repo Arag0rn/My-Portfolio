@@ -6,8 +6,9 @@ export default createMiddleware({
 });
 
 export const config = {
+  // Добавляем рантайм, чтобы Vercel не гадал
+  runtime: 'nodejs', 
   matcher: [
-    // pages
     '/((?!api|_next|favicon.ico|.*\\..*).*)'
   ]
 };
