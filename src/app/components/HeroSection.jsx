@@ -9,32 +9,18 @@ export const HeroSection = () => {
   const t = useTranslations("Hero");
   const locale = useLocale();
 
-  const handleDownload = () => {
-    if (locale === "en") {
-      const pdfPath = './Khabuzov_S_SV.pdf';
-  
-      const link = document.createElement('a');
-      link.href = pdfPath;
-      link.target = '_blank';
-      link.download = 'Khabuzov_S_SV.pdf';
-  
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    }
-  
-    if (locale === "de") {
-      const pdfPath = './Habuzov S SV(de).pdf';
-  
-      const link = document.createElement('a');
-      link.href = pdfPath;
-      link.target = '_blank';
-      link.download = 'Khabuzov_S_SV.pdf';
-  
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    }
+const handleDownload = () => {
+    const fileName = locale === "de" ? "Khabuzov_S_SV_de.pdf" : "Khabuzov_S_SV.pdf";
+    const pdfPath = `/${fileName}`;
+
+    const link = document.createElement('a');
+    link.href = pdfPath;
+    link.target = '_blank';
+    link.download = fileName;
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
