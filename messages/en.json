@@ -18,6 +18,7 @@
       "certifications": "Certifications"
     },
     "Projects":{
+      "title": "My Projects",
       "description1": "A practical project for a book marketplace. Here used auth with Firebase, also you can add to favorite. Api and darck mode.",
       "description2": "My field project. You can try it yourself. The application counts the water you drink, sends notifications to telegram and does not require complicated registration. You can use Google account. I gladly accept feedback.",
       "description3": "A huge shoutout to Baza Trainee Ukraine and the wonderful team of volunteers we've assembled to build the website for ENG for UARMY - Olena Chekryzhova's non-profit that helps Ukrainian soldiers learn Military English!",

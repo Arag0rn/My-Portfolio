@@ -18,6 +18,7 @@
       "certifications": "Zertifizierungen"
     },
     "Projects":{
+      "title": "Meine Projekte",
       "description1": "Ein praktisches Projekt für einen Buchmarktplatz. Hier wird die Authentifizierung mit Firebase verwendet, Sie können sie auch zu Ihren Favoriten hinzufügen. API und Dunkelmodus.",
       "description2": "Mein Feldprojekt. Sie können es selbst ausprobieren. Die Anwendung zählt das von Ihnen getrunkene Wasser, sendet Benachrichtigungen an Telegram und erfordert keine komplizierte Registrierung. Sie können ein Google-Konto verwenden. Rückmeldungen nehme ich gerne entgegen.",
       "description3": "Ein großes Lob an Baza Trainee Ukraine und das wunderbare Team von Freiwilligen, das wir zusammengestellt haben, um die Website für ENG für UARMY zu erstellen – Olena Chekryzhovas gemeinnützige Organisation, die ukrainischen Soldaten hilft, Militärenglisch zu lernen!",

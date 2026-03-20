@@ -17,12 +17,12 @@ const ProjectsSection = () => {
   const projectsData = [
     {
       id: 1,
-      title: "Bookshelf",
-      description: t("description1"),
-      image: "/projects/Bookshelf.webp",
-      tag: ["All", "HTML/CSS/JS"],
-      gitUrl: "https://github.com/Arag0rn/project-CodeBusters",
-      previewUrl: "https://arag0rn.github.io/project-CodeBusters/",
+      title: "Vue Sneakers Shop",
+      description: t("description12"),
+      image: "/projects/vueShop.webp",
+      tag: ["All", "FullStack", "Vue"],
+      gitUrl: "https://github.com/Arag0rn/shopFront",
+      previewUrl: "https://shop-front-omega.vercel.app/",
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ const ProjectsSection = () => {
       gitUrl: "https://github.com/Okimmi/stackNinjas-frontend",
       previewUrl: "https://okimmi.github.io/stackNinjas-frontend/",
     },
-      {
+    {
       id: 3,
       title: "ENG For Uarmy",
       image: "/projects/eng-for-ua.webp",
@@ -44,51 +44,6 @@ const ProjectsSection = () => {
     },
     {
       id: 4,
-      title: "Argo-Advisory",
-      description: t("description4"),
-      image: "/projects/argo-advisory.webp",
-      tag: ["All", "HTML/CSS/JS"],
-      gitUrl: "https://github.com/Arag0rn/ARGO-Advisori",
-      previewUrl: "https://argo-advisory.com/",
-    },
-    {
-      id: 5,
-      title: "Cinema Monster",
-      description: t("description5"),
-      image: "/projects/Cinema.webp",
-      tag: ["All", "React"],
-      gitUrl: "https://github.com/Arag0rn/goit-react-hw-05-movies",
-      previewUrl: "https://arag0rn.github.io/goit-react-hw-05-movies/",
-    },
-    {
-      id: 6,
-      title: "Watch Sport",
-      description: t("description6"),
-      image: "/projects/watch.webp",
-      tag: ["All", "HTML/CSS/JS"],
-      gitUrl: "https://github.com/Arag0rn/The-Watch-Spot",
-      previewUrl: "https://arag0rn.github.io/The-Watch-Spot/",
-    },
-    {
-      id: 7,
-      title: "Portfolio",
-      description: t("description7"),
-      image: "/projects/Port.webp",
-      tag: ["All", "Next"],
-      gitUrl: "https://github.com/Arag0rn/My-Portfolio",
-      previewUrl: "https://khabuzovs-portfolio.vercel.app/",
-    },
-    {
-      id: 8,
-      title: "Car Rental",
-      description: t("description8"),
-      image: "/projects/CarRental.webp",
-      tag: ["All", "React"],
-      gitUrl: "https://github.com/Arag0rn/Car-Rental",
-      previewUrl: "https://arag0rn.github.io/Car-Rental/home",
-    },
-    {
-      id: 9,
       title: "Friend Rate",
       description: t("description9"),
       image: "/projects/FriendRate.webp",
@@ -97,16 +52,7 @@ const ProjectsSection = () => {
       previewUrl: "https://fiend-rate.vercel.app/",
     },
     {
-      id: 10,
-      title: "TODOcalendar",
-      description: t("description10"),
-      image: "/projects/Calendar.webp",
-      tag: ["All", "FullStack"],
-      gitUrl: "https://github.com/Arag0rn/TODOcalendar",
-      previewUrl: "https://arag0rn.github.io/TODOcalendar",
-    },
-        {
-      id: 11,
+      id: 5,
       title: "Crystall nails studio",
       description: t("description11"),
       image: "/projects/CrystalNails.webp",
@@ -114,14 +60,68 @@ const ProjectsSection = () => {
       gitUrl: "https://github.com/Arag0rn/crystall-nails-studio",
       previewUrl: "https://crystal-studio-nails.vercel.app",
     },
-          {
+    {
+      id: 6,
+      title: "Argo-Advisory",
+      description: t("description4"),
+      image: "/projects/argo-advisory.webp",
+      tag: ["All", "HTML/CSS/JS"],
+      gitUrl: "https://github.com/Arag0rn/ARGO-Advisori",
+      previewUrl: "https://argo-advisory.com/",
+    },
+    {
+      id: 7,
+      title: "Watch Sport",
+      description: t("description6"),
+      image: "/projects/watch.webp",
+      tag: ["All", "HTML/CSS/JS"],
+      gitUrl: "https://github.com/Arag0rn/The-Watch-Spot",
+      previewUrl: "https://arag0rn.github.io/The-Watch-Spot/",
+    },
+    {
+      id: 8,
+      title: "Portfolio",
+      description: t("description7"),
+      image: "/projects/Port.webp",
+      tag: ["All", "Next"],
+      gitUrl: "https://github.com/Arag0rn/My-Portfolio",
+      previewUrl: "https://khabuzovs-portfolio.vercel.app/",
+    },
+    {
+      id: 9,
+      title: "Car Rental",
+      description: t("description8"),
+      image: "/projects/CarRental.webp",
+      tag: ["All", "React"],
+      gitUrl: "https://github.com/Arag0rn/Car-Rental",
+      previewUrl: "https://arag0rn.github.io/Car-Rental/home",
+    },
+    {
+      id: 10,
+      title: "TODOcalendar(bd is not active)",
+      description: t("description10"),
+      image: "/projects/Calendar.webp",
+      tag: ["All", "FullStack"],
+      gitUrl: "https://github.com/Arag0rn/TODOcalendar",
+      previewUrl: "https://arag0rn.github.io/TODOcalendar",
+    },
+    {
+      id: 11,
+      title: "Bookshelf",
+      description: t("description1"),
+      image: "/projects/Bookshelf.webp",
+      tag: ["All", "HTML/CSS/JS"],
+      gitUrl: "https://github.com/Arag0rn/project-CodeBusters",
+      previewUrl: "https://arag0rn.github.io/project-CodeBusters/",
+    },
+    {
       id: 12,
-      title: "Vue Sneakers Shop",
-      description: t("description12"),
-      image: "/projects/vueShop.webp",
-      tag: ["All", "FullStack", "Vue"],
-      gitUrl: "https://github.com/Arag0rn/shopFront",
-      previewUrl: "https://shop-front-omega.vercel.app/",
+      title: "Cinema Monster",
+      description: t("description5"),
+      image: "/projects/Cinema.webp",
+      tag: ["All", "React"],
+      gitUrl: "https://github.com/Arag0rn/goit-react-hw-05-movies",
+      previewUrl: "https://arag0rn.github.io/goit-react-hw-05-movies/",
     },
   ];
   
@@ -130,9 +130,9 @@ const ProjectsSection = () => {
     setTag(newTag);
   };
 
-  const filteredProjects = projectsData.filter((project) =>
-    project.tag.includes(tag)
-  );
+  const sortedProjects = projectsData
+    .filter((project) => project.tag.includes(tag))
+    .sort((a, b) => a.id - b.id);
 
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
@@ -142,7 +142,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-        My Projects
+        {t("title")}
       </h2>
       <div className="text-white flex flex-row flex-wrap justify-center items-center gap-2 py-6">
         <ProjectTag
@@ -177,16 +177,15 @@ const ProjectsSection = () => {
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {filteredProjects.map((project, index) => (
+        {sortedProjects.map((project, index) => (
           <motion.li
-            key={index}
+            key={project.id}
             variants={cardVariants}
             initial="initial"
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.3, delay: index * 0.4 }}
           >
             <ProjectCard
-              key={project.id}
               title={project.title}
               description={project.description}
               imgUrl={project.image}
