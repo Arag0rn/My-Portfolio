@@ -4,6 +4,7 @@ import Image from "next/image";
 import TabButton from "./TabButton";
 import { useTranslations } from 'next-intl';
 import CertModal from "./CertModal";
+import { skillIcons } from "./skillIcons";
 import goit from "../../../public/GOIT.jpeg";
 import zer from "../../../public/Zer.jpeg";
 
@@ -28,19 +29,15 @@ const AboutSection = () => {
       title: "Skills",
       id: "skills",
       content: (
-        <ul className="list-disc pl-2">
-          <li>React</li>
-          <li>TypeScript</li>
-          <li>Next.js</li>
-          <li>React Native</li>
-          <li>Node.js</li>
-          <li>Express</li>
-          <li>PostgreSQL</li>
-          <li>Redis</li>
-          <li>Tailwind CSS</li>
-          <li>Zustand / TanStack Query</li>
-          <li>WCAG 2.1</li>
-          <li>Docker</li>
+        <ul className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-x-4 gap-y-6">
+          {skillIcons.map(({ label, path, fillRule }) => (
+            <li key={label} className="flex flex-col items-center gap-2 text-center">
+              <svg viewBox="0 0 24 24" className="h-10 w-10 fill-current text-white" aria-hidden="true" focusable="false">
+                <path d={path} fillRule={fillRule} />
+              </svg>
+              <span className="text-sm text-[#ADB7BE]">{label}</span>
+            </li>
+          ))}
         </ul>
       ),
     },
