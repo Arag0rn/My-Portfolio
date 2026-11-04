@@ -12,7 +12,7 @@
       "download": "Lebenslauf herunterladen"
     },
     "About": {
-      "about_me": "Ich bin Fullstack-Entwickler mit über 3 Jahre Erfahrung in der Entwicklung, davon sechs Monate in verschiedenen Branchen. Gute Englisch- und Deutschkenntnisse, die sich durch Anpassungsfähigkeit und schnelles Lernen auszeichnen. Leidenschaftlich für Innovation, engagiert für die Bereitstellung hochwertiger Weblösungen. Brilliert in internationalen, kollaborativen Umgebungen und trägt zu Disziplin, Organisation und effektiver Kommunikation bei. Ich möchte meinen einzigartigen Hintergrund in der Frontend-Entwicklung nutzen, um Anpassungsfähigkeit, Lernagilität und akribische Liebe zum Detail für benutzerzentrierte Lösungen anzubieten.",
+      "about_me": "Ich bin Frontend- und Full-Stack-Entwickler in Leipzig und seit Ende 2023 durchgehend kommerziell tätig, meist mit React, TypeScript und Next.js. Bei CABINET, einem mandantenfähigen CRM für Dienstleistungsbetriebe, entwickle ich die Web-App und die mobile App mit React Native und prüfe jede neue Schnittstelle vorab gegen den OpenAPI-Vertrag. Davor habe ich den Onlineshop von Posterlounge barrierefrei nach WCAG 2.1 umgesetzt, und bei Junfolio habe ich die fehlenden Node.js-Services neu gebaut, als das Backend-Team kurz vor dem Launch ging. Serverseitig arbeite ich mit Node.js, PostgreSQL und Redis, und mit Claude Code arbeite ich täglich mit eigenen Review-Agenten.",
       "skills": "Fähigkeiten",
       "education": "Ausbildung",
       "certifications": "Zertifizierungen",
@@ -33,7 +33,12 @@
       "description9": "FriendRate (FR) ist eine soziale Plattform zum Sammeln und Austauschen von Informationen zwischen Benutzern, spezialisiert auf Stimmenerfassung mit der Möglichkeit der Bewertung und stadtweit.",
       "description10": "Eine Seite zum Üben von Full-Stack-Fähigkeiten. Der Backend-Teil wurde implementiert, die Daten werden in der Datenbank (Mongo) gespeichert und eine Bibliothek zur Bestimmung von Standorten und lokalen Feiertagen wurde hinzugefügt. Darüber hinaus besteht die Möglichkeit, Fälle nach Wichtigkeit zu sortieren.",
       "description11": "In meiner Freizeit habe ich das Projekt **crystall-nails-studio** für eine Bekannte entwickelt. Ziel war eine Website mit Administrationsbereich, damit die Betreiberin die Inhalte eigenständig verwalten und aktualisieren kann. Ich setzte Next.js TypeScript und TailwindCSS ein, implementierte API-Routen und Middleware, stellte die Code-Qualität mit ESLint sicher und deployte die Anwendung auf Vercel.",
-      "description12": "Ein Full-Stack-Praxisprojekt für einen Marktplatz. Der Schwerpunkt lag auf der Anbindung eines Vue.js-Frontends an ein Node.js-Backend, der Nutzung von Axios für API-Anfragen und der Datenspeicherung in MongoDB. Das Projekt ist vollständig in der Cloud bereitgestellt."
+      "description12": "Ein Full-Stack-Praxisprojekt für einen Marktplatz. Der Schwerpunkt lag auf der Anbindung eines Vue.js-Frontends an ein Node.js-Backend, der Nutzung von Axios für API-Anfragen und der Datenspeicherung in MongoDB. Das Projekt ist vollständig in der Cloud bereitgestellt.",
+      "description13": "Ein CRM im Produktivbetrieb für Beauty- und Dienstleistungsbetriebe: Online-Terminbuchung, Kalender, Kundenverwaltung, Dienstpläne, Treueprogramm und Analysen. Entwickelt mit Next.js 16, TypeScript, Zustand und next-intl (Ukrainisch/Englisch), betrieben auf Kubernetes.",
+      "description14": "Eine Android-App für Mitarbeitende und Admins von Cabinet CRM, entwickelt mit Expo und React Native: Monats-, Wochen- und Tageskalender, Buchungshistorie, Kundenverwaltung und sichere Anmeldung mit Token-Refresh. NativeWind, React Query, ein aus der OpenAPI-Spezifikation typisierter API-Client und Jest-Tests.",
+      "description15": "Ein Echtzeit-Dashboard für eine Roboterflotte: Eine Simulation bewegt Patrouillenroboter alle zwei Sekunden, die Positionen werden in PostgreSQL gespeichert, über Redis Pub/Sub verteilt und per WebSocket live auf eine OpenLayers-Karte übertragen. Express 5, React, JWT-Authentifizierung, Start mit einem Docker-Compose-Befehl.",
+      "code_link": "Quellcode von {title}",
+      "preview_link": "Live-Vorschau von {title}"
     },
     "Email":{
       "title": "Lass uns verbinden",

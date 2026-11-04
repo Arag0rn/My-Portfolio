@@ -29,17 +29,18 @@ const AboutSection = () => {
       id: "skills",
       content: (
         <ul className="list-disc pl-2">
-          <li>Next.js</li>
-          <li>Vue.js</li>
           <li>React</li>
+          <li>TypeScript</li>
+          <li>Next.js</li>
+          <li>React Native</li>
           <li>Node.js</li>
-          <li>PHP</li>
           <li>Express</li>
-          <li>Mongo Db</li>
-          <li>JavaScript</li>
-          <li>Tailwind</li>
-          <li>Socket.io</li>
-        
+          <li>PostgreSQL</li>
+          <li>Redis</li>
+          <li>Tailwind CSS</li>
+          <li>Zustand / TanStack Query</li>
+          <li>WCAG 2.1</li>
+          <li>Docker</li>
         </ul>
       ),
     },
