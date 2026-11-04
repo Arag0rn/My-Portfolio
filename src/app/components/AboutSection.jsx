@@ -29,17 +29,18 @@ const AboutSection = () => {
       id: "skills",
       content: (
         <ul className="list-disc pl-2">
-          <li>Next.js</li>
-          <li>Vue.js</li>
           <li>React</li>
+          <li>TypeScript</li>
+          <li>Next.js</li>
+          <li>React Native</li>
           <li>Node.js</li>
-          <li>PHP</li>
           <li>Express</li>
-          <li>Mongo Db</li>
-          <li>JavaScript</li>
-          <li>Tailwind</li>
-          <li>Socket.io</li>
-        
+          <li>PostgreSQL</li>
+          <li>Redis</li>
+          <li>Tailwind CSS</li>
+          <li>Zustand / TanStack Query</li>
+          <li>WCAG 2.1</li>
+          <li>Docker</li>
         </ul>
       ),
     },
@@ -48,8 +49,8 @@ const AboutSection = () => {
       id: "education",
       content: (
         <ul className="list-disc pl-2">
-          <li className="cursor-pointer hover:text-primary-500" onClick={() => handleOpen(goit)}>Full stack Developer GoIT - start your career in IT</li>
-          <li className="cursor-pointer hover:text-primary-500" onClick={() => handleOpen(zer)}>Be On Max - Web-developer</li>
+          <li><button type="button" className="text-left hover:text-primary-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded" onClick={() => handleOpen(goit)}>Full stack Developer GoIT - start your career in IT</button></li>
+          <li><button type="button" className="text-left hover:text-primary-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded" onClick={() => handleOpen(zer)}>Be On Max - Web-developer</button></li>
         </ul>
       ),
     },

@@ -17,6 +17,29 @@ const ProjectsSection = () => {
   const projectsData = [
     {
       id: 1,
+      title: "Cabinet CRM",
+      description: t("description13"),
+      image: "/projects/cabinet.webp",
+      tag: ["All", "Next"],
+      previewUrl: "https://cabinet.com.ua/",
+    },
+    {
+      id: 2,
+      title: "Cabinet Business (Android)",
+      description: t("description14"),
+      image: "/projects/cabinet-mobile.webp",
+      tag: ["All", "Mobile"],
+    },
+    {
+      id: 3,
+      title: "Mini-Fleet Monitor",
+      description: t("description15"),
+      image: "/projects/mini-fleet.webp",
+      tag: ["All", "React", "FullStack"],
+      gitUrl: "https://github.com/Arag0rn/mini-fleet-monitor",
+    },
+    {
+      id: 4,
       title: "Vue Sneakers Shop",
       description: t("description12"),
       image: "/projects/vueShop.webp",
@@ -25,7 +48,7 @@ const ProjectsSection = () => {
       previewUrl: "https://shop-front-omega.vercel.app/",
     },
     {
-      id: 2,
+      id: 5,
       title: "Water Tracker",
       description: t("description2"),
       image: "/projects/water-tracker.webp",
@@ -34,7 +57,7 @@ const ProjectsSection = () => {
       previewUrl: "https://okimmi.github.io/stackNinjas-frontend/",
     },
     {
-      id: 3,
+      id: 6,
       title: "ENG For Uarmy",
       image: "/projects/eng-for-ua.webp",
       description: t("description3"),
@@ -43,7 +66,7 @@ const ProjectsSection = () => {
       previewUrl: "https://engforuarmy.org/",
     },
     {
-      id: 4,
+      id: 7,
       title: "Friend Rate",
       description: t("description9"),
       image: "/projects/FriendRate.webp",
@@ -52,7 +75,7 @@ const ProjectsSection = () => {
       previewUrl: "https://fiend-rate.vercel.app/",
     },
     {
-      id: 5,
+      id: 8,
       title: "Crystall nails studio",
       description: t("description11"),
       image: "/projects/CrystalNails.webp",
@@ -61,7 +84,7 @@ const ProjectsSection = () => {
       previewUrl: "https://crystal-studio-nails.vercel.app",
     },
     {
-      id: 6,
+      id: 9,
       title: "Argo-Advisory",
       description: t("description4"),
       image: "/projects/argo-advisory.webp",
@@ -70,7 +93,7 @@ const ProjectsSection = () => {
       previewUrl: "https://argo-advisory.com/",
     },
     {
-      id: 7,
+      id: 10,
       title: "Watch Sport",
       description: t("description6"),
       image: "/projects/watch.webp",
@@ -79,7 +102,7 @@ const ProjectsSection = () => {
       previewUrl: "https://arag0rn.github.io/The-Watch-Spot/",
     },
     {
-      id: 8,
+      id: 11,
       title: "Portfolio",
       description: t("description7"),
       image: "/projects/Port.webp",
@@ -88,7 +111,7 @@ const ProjectsSection = () => {
       previewUrl: "https://khabuzovs-portfolio.vercel.app/",
     },
     {
-      id: 9,
+      id: 12,
       title: "Car Rental",
       description: t("description8"),
       image: "/projects/CarRental.webp",
@@ -97,7 +120,7 @@ const ProjectsSection = () => {
       previewUrl: "https://arag0rn.github.io/Car-Rental/home",
     },
     {
-      id: 10,
+      id: 13,
       title: "TODOcalendar(bd is not active)",
       description: t("description10"),
       image: "/projects/Calendar.webp",
@@ -106,7 +129,7 @@ const ProjectsSection = () => {
       previewUrl: "https://arag0rn.github.io/TODOcalendar",
     },
     {
-      id: 11,
+      id: 14,
       title: "Bookshelf",
       description: t("description1"),
       image: "/projects/Bookshelf.webp",
@@ -115,7 +138,7 @@ const ProjectsSection = () => {
       previewUrl: "https://arag0rn.github.io/project-CodeBusters/",
     },
     {
-      id: 12,
+      id: 15,
       title: "Cinema Monster",
       description: t("description5"),
       image: "/projects/Cinema.webp",
@@ -174,6 +197,11 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="FullStack"
           isSelected={tag === "FullStack"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Mobile"
+          isSelected={tag === "Mobile"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
