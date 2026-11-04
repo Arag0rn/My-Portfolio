@@ -7,8 +7,6 @@ import NavBar from "../components/NavBar";
 import ProjectsSection from "../components/ProjectsSection";
 import VolunteeringSection from "../components/Volunteering";
 
-export const dynamic = "force-dynamic";
-
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-[#121212]">

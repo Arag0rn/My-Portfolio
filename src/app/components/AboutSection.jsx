@@ -48,8 +48,8 @@ const AboutSection = () => {
       id: "education",
       content: (
         <ul className="list-disc pl-2">
-          <li className="cursor-pointer hover:text-primary-500" onClick={() => handleOpen(goit)}>Full stack Developer GoIT - start your career in IT</li>
-          <li className="cursor-pointer hover:text-primary-500" onClick={() => handleOpen(zer)}>Be On Max - Web-developer</li>
+          <li><button type="button" className="text-left hover:text-primary-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded" onClick={() => handleOpen(goit)}>Full stack Developer GoIT - start your career in IT</button></li>
+          <li><button type="button" className="text-left hover:text-primary-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded" onClick={() => handleOpen(zer)}>Be On Max - Web-developer</button></li>
         </ul>
       ),
     },

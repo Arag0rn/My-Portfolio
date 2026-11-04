@@ -15,7 +15,10 @@
       "about_me": "Ich bin Fullstack-Entwickler mit über 3 Jahre Erfahrung in der Entwicklung, davon sechs Monate in verschiedenen Branchen. Gute Englisch- und Deutschkenntnisse, die sich durch Anpassungsfähigkeit und schnelles Lernen auszeichnen. Leidenschaftlich für Innovation, engagiert für die Bereitstellung hochwertiger Weblösungen. Brilliert in internationalen, kollaborativen Umgebungen und trägt zu Disziplin, Organisation und effektiver Kommunikation bei. Ich möchte meinen einzigartigen Hintergrund in der Frontend-Entwicklung nutzen, um Anpassungsfähigkeit, Lernagilität und akribische Liebe zum Detail für benutzerzentrierte Lösungen anzubieten.",
       "skills": "Fähigkeiten",
       "education": "Ausbildung",
-      "certifications": "Zertifizierungen"
+      "certifications": "Zertifizierungen",
+      "certificate": "Zertifikat",
+      "zoom_in": "Zertifikat vergrößern",
+      "zoom_out": "Zertifikat verkleinern"
     },
     "Projects":{
       "title": "Meine Projekte",
