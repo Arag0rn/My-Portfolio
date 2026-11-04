@@ -1,13 +1,15 @@
 "use client";
-import React from 'react'
+import React, { useRef } from 'react'
 import Image from "next/image"
 import { TypeAnimation } from 'react-type-animation';
 import { useTranslations } from 'next-intl';
 import { useLocale } from "next-intl";
+import HeroChart from "./HeroChart";
 
 export const HeroSection = () => {
   const t = useTranslations("Hero");
   const locale = useLocale();
+  const photoRef = useRef(null);
 
 const handleDownload = () => {
     const fileName = locale === "de" ? "Khabuzov_S_SV_de.pdf" : "Khabuzov_S_SV.pdf";
@@ -24,7 +26,8 @@ const handleDownload = () => {
   };
 
   return (
-    <section>
+    <section className='relative isolate py-8 lg:py-12'>
+        <HeroChart anchorRef={photoRef} />
         <div className='grid grid-cols-1 lg:grid-cols-12'>
             <div className='col-span-7 place-self-center text-center sm:text-left'>
                 <h1 className="text-white mb-4 text-3xl sm:text-5xl lg:text-6xl font-extrabold">
@@ -45,6 +48,7 @@ const handleDownload = () => {
   
       ]}
       wrapper="span"
+      className="inline-block min-h-[2lh] sm:min-h-[1lh] lg:min-h-[2lh] xl:min-h-[1lh]"
       speed={30}
       repeat={Infinity}
     />
@@ -58,7 +62,7 @@ const handleDownload = () => {
                 </div>
          </div>
             <div className='col-span-5 place-self-center mt-4 lg:mt-0 overflow-hidden'>
-            <div className='rounded-full overflow-hidden bg-cover bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative'>
+            <div ref={photoRef} className='rounded-full overflow-hidden bg-cover bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative'>
                 <Image
                   src='/Hero.jpg'
                   alt='hero-img'

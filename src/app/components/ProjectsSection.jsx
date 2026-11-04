@@ -2,7 +2,7 @@
 import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, useReducedMotion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
 
@@ -11,6 +11,7 @@ const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  const reduceMotion = useReducedMotion();
   const t = useTranslations("Projects");
 
 
@@ -209,9 +210,9 @@ const ProjectsSection = () => {
           <motion.li
             key={project.id}
             variants={cardVariants}
-            initial="initial"
-            animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
+            initial={reduceMotion ? false : "initial"}
+            animate={isInView || reduceMotion ? "animate" : "initial"}
+            transition={{ duration: 0.3, delay: Math.min(index, 5) * 0.08 }}
           >
             <ProjectCard
               title={project.title}

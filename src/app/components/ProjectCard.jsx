@@ -6,12 +6,13 @@ import { useTranslations } from "next-intl";
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
   const t = useTranslations("Projects");
   return (
-    <div>
-      <div className="h-52 md:h-72 rounded-t-xl relative group overflow-hidden">
+    <div className="h-full flex flex-col">
+      <div className="h-52 md:h-72 shrink-0 rounded-t-xl relative group overflow-hidden">
         <Image
           src={imgUrl}
           alt={title}
           fill
+          sizes="(min-width: 768px) 33vw, 100vw"
           className="object-cover"
         />
 
@@ -32,8 +33,8 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
         )}
       </div>
 
-      <div className="text-white rounded-b-xl mt-3 bg-[#181818] py-6 px-4">
-        <h5 className="text-xl font-semibold mb-2">{title}</h5>
+      <div className="flex-1 text-white rounded-b-xl bg-[#181818] py-6 px-4">
+        <h3 className="text-xl font-semibold mb-2">{title}</h3>
         <p className="text-[#ADB7BE]">{description}</p>
       </div>
     </div>
